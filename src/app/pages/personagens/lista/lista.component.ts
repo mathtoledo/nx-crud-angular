@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { Personagem } from 'src/app/models/personagem';
 import { PersonagemService } from 'src/app/services/personagem.service';
+import { DialogFormPersonagemComponent } from '../../dialog-form-personagem/dialog-form-personagem.component';
 
 @Component({
   selector: 'app-lista',
@@ -29,25 +30,25 @@ export class ListaComponent implements OnInit {
   }
 
   novo(): void {
-    // const dialogRef = this.dialog.open(DialogFormPersonagemComponent);
+    const dialogRef = this.dialog.open(DialogFormPersonagemComponent);
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   if (result) {
-    //     this.listarPersonagens();
-    //   }
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.listarPersonagens();
+      }
+    });
   }
 
   editar(personagem: Personagem): void {
-    // const dialogRef = this.dialog.open(DialogFormPersonagemComponent, {
-    //   data: personagem
-    // });
+    const dialogRef = this.dialog.open(DialogFormPersonagemComponent, {
+      data: personagem
+    });
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   if (result) {
-    //     this.listarPersonagens();
-    //   }
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.listarPersonagens();
+      }
+    });
   }
 
   excluir(personagem: Personagem): void {
