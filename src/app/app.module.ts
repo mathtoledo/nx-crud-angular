@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './shared/app-material/app-material.module';
 import { DialogFormPersonagemComponent } from './pages/dialog-form-personagem/dialog-form-personagem.component';
+import { ColaboradorComponent } from './pages/dialog-form-colaborador/colaborador/colaborador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogFormPersonagemComponent
+    DialogFormPersonagemComponent,
+    ColaboradorComponent
   ],
   imports: [
     BrowserModule,

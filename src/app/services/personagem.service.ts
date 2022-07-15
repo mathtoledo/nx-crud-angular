@@ -13,14 +13,14 @@ export class PersonagemService {
   constructor(private _httpClient: HttpClient) { }
 
   listar(): Observable<any> {
-    return this._httpClient.get(`${environment.apiUrl}/characters`);
+    return this._httpClient.get(`${environment.apiUrl}/colaborador`);
   }
 
   salvar(personagem: Personagem): Observable<any> {
-    return this._httpClient.post(`${environment.apiUrl}/characters`, personagem);
+    return this._httpClient.post(`${environment.apiUrl}/colaborador`, personagem);
   }
 
   excluir(id: number): Observable<any> {
-    return this._httpClient.delete(`${environment.apiUrl}/characters/${id}`);
+    return this._httpClient.delete(`${environment.apiUrl}/colaborador/${id}`);
   }
 }
