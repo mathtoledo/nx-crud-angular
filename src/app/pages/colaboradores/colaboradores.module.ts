@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ColaboradoresRoutingModule } from './colaboradores-routing.module';
 import { ListaComponent } from './lista/lista.component';
 import { AppMaterialModule } from 'src/app/shared/app-material/app-material.module';
+import { DialogFormColaboradorComponent } from './dialog-form-colaborador/dialog-form-colaborador.component';
 
 
 @NgModule({
   declarations: [
-    ListaComponent
+    ListaComponent,
+    DialogFormColaboradorComponent
   ],
   imports: [
     CommonModule,

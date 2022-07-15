@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { Colaborador } from 'src/app/models/colaborador';
 import { ColaboradorService } from 'src/app/services/colaborador.service';
-// import { DialogFormColaboradorComponent } from '../dialog-form-colaborador/dialog-form-colaborador.component';
+import { DialogFormColaboradorComponent } from '../dialog-form-colaborador/dialog-form-colaborador.component';
 
 @Component({
   selector: 'app-lista',
@@ -30,25 +30,25 @@ export class ListaComponent implements OnInit {
   }
 
   novo(): void {
-    // const dialogRef = this.dialog.open(DialogFormColaboradorComponent);
+    const dialogRef = this.dialog.open(DialogFormColaboradorComponent);
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   if (result) {
-    //     this.listarColaboradores();
-    //   }
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.listarColaboradores();
+      }
+    });
   }
 
   editar(colaborador: Colaborador): void {
-    // const dialogRef = this.dialog.open(DialogFormColaboradorComponent, {
-    //   data: colaborador
-    // });
+    const dialogRef = this.dialog.open(DialogFormColaboradorComponent, {
+      data: colaborador
+    });
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   if (result) {
-    //     this.listarColaboradores();
-    //   }
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.listarColaboradores();
+      }
+    });
   }
 
   excluir(colaborador: Colaborador): void {
