@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ColaboradoresRoutingModule } from './colaboradores-routing.module';
 import { ListaComponent } from './lista/lista.component';
+import { AppMaterialModule } from 'src/app/shared/app-material/app-material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ListaComponent } from './lista/lista.component';
   ],
   imports: [
     CommonModule,
-    ColaboradoresRoutingModule
+    ColaboradoresRoutingModule,
+    AppMaterialModule,
   ]
 })
 export class ColaboradoresModule { }
