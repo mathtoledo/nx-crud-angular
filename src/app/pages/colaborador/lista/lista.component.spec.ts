@@ -1,10 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListaComponent } from '../../profissionais/lista/lista.component';
+import { ListaComponent } from '../../colaborador/lista/lista.component';
 
 describe('ListaComponent', () => {
-  beforeEach(() => {
-  });
   let component: ListaComponent;
   let fixture: ComponentFixture<ListaComponent>;
 

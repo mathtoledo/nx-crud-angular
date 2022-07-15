@@ -3,13 +3,13 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 
-import { ProfissionaisService } from './../../../services/profissionais.service';
+import { ProfissionaisService } from '../../../services/profissionais.service';
 import { Profissional } from 'src/app/models/profissional';
 
 @Component({
   selector: 'app-lista',
-  templateUrl: './lista.component.html',
-  styleUrls: ['./lista.component.scss']
+  templateUrl: '../../profissionais/lista/lista.component.html',
+  styleUrls: ['../../profissionais/lista/lista.component.scss']
 })
 export class ListaComponent implements OnInit {
   displayedColumns: string[] = ['nome', 'endereco', 'celular', 'telefone', 'funcao', 'acoes'];
