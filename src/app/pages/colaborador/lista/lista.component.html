@@ -3,31 +3,31 @@
   <div class="search-section">
     <mat-form-field appearance="outline">
       <mat-label>Filtrar</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Personagem XYZ" #input>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Jão da Silva" #input>
 
     </mat-form-field>
-    <button mat-flat-button color="primary" (click)="novo()">Novo personagen</button>
+    <button mat-flat-button color="primary" (click)="novo()">Novo colaborador</button>
   </div>
 
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-    <ng-container matColumnDef="identificador">
-      <th mat-header-cell *matHeaderCellDef> Identificador </th>
-      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-    </ng-container>
 
     <ng-container matColumnDef="nome">
       <th mat-header-cell *matHeaderCellDef> Nome </th>
       <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
     </ng-container>
 
+    <ng-container matColumnDef="observacao">
+      <th mat-header-cell *matHeaderCellDef> Observação </th>
+      <td mat-cell *matCellDef="let element"> {{element.observacao}} </td>
+    </ng-container>
+
     <ng-container matColumnDef="acoes">
       <th mat-header-cell *matHeaderCellDef> Ações </th>
       <td mat-cell *matCellDef="let element">
-        <button mat-icon-button color="primary" title="Editar personagen" (click)="editar(element)">
+        <button mat-icon-button color="primary" title="Editar colaborador" (click)="editar(element)">
           <mat-icon>edit</mat-icon>
         </button>
-        <button mat-icon-button color="primary" title="Excluir personagen" (click)="excluir(element)">
+        <button mat-icon-button color="primary" title="Excluir colaborador" (click)="excluir(element)">
           <mat-icon>delete</mat-icon>
         </button>
       </td>

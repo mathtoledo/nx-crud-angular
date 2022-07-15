@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ListaComponent } from './lista/lista.component';
+import { ListaComponent } from '../colaborador/lista/lista.component';
 
 const routes: Routes = [{ path: '', component: ListaComponent }];
 
@@ -9,4 +9,4 @@ const routes: Routes = [{ path: '', component: ListaComponent }];
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class EstabelecimentosRoutingModule { }
+export class ColaboradorRoutingModule { }

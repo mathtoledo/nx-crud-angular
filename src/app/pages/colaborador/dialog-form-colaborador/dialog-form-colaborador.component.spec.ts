@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListaComponent } from './lista.component';
+import { DialogFormColaboradorComponent } from './dialog-form-colaborador.component';
 
-describe('ListaComponent', () => {
-  let component: ListaComponent;
-  let fixture: ComponentFixture<ListaComponent>;
+describe('ColaboradorComponent', () => {
+  let component: DialogFormColaboradorComponent;
+  let fixture: ComponentFixture<DialogFormColaboradorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListaComponent ]
+      declarations: [ DialogFormColaboradorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListaComponent);
+    fixture = TestBed.createComponent(DialogFormColaboradorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
