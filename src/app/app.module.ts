@@ -6,12 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './shared/app-material/app-material.module';
-import { DialogFormPersonagemComponent } from './pages/dialog-form-personagem/dialog-form-personagem.component';
+import { DialogFormPersonagemComponent } from './pages/personagens/dialog-form-personagem/dialog-form-personagem.component';
+import { ColaboradorComponent } from './pages/colaborador/dialog-form-colaborador/dialog-form-colaborador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogFormPersonagemComponent
+    DialogFormPersonagemComponent,
+    ColaboradorComponent
   ],
   imports: [
     BrowserModule,

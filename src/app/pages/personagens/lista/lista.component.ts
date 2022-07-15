@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { Personagem } from 'src/app/models/personagem';
 import { PersonagemService } from 'src/app/services/personagem.service';
-import { DialogFormPersonagemComponent } from '../../dialog-form-personagem/dialog-form-personagem.component';
+import { DialogFormPersonagemComponent } from '../dialog-form-personagem/dialog-form-personagem.component';
 
 @Component({
   selector: 'app-lista',
