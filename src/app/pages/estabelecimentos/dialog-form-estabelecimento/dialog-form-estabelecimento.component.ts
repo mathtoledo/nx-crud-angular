@@ -46,11 +46,11 @@ export class DialogFormEstabelecimentoComponent implements OnInit {
       this.form.markAllAsTouched();
       return;
     }
-    const estabelecimento = { ...this.form.getRawValue() };
+    const colaborador = { ...this.form.getRawValue() };
     if (this.edicao) {
-      estabelecimento.id = this.data.id;
+      colaborador.id = this.data.id;
     }
-    this._estabelecimentoService.salvar(estabelecimento).subscribe(response => {
+    this._estabelecimentoService.salvar(colaborador).subscribe(response => {
       this._dialogRef.close(response);
     });
   }

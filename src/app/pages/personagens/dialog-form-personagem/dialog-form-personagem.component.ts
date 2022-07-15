@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Personagem } from 'src/app/models/personagem';
 
-import { PersonagemService } from '../../services/personagem.service';
+import { PersonagemService } from '../../../services/personagem.service';
 
 @Component({
   selector: 'app-dialog-form-personagem',
